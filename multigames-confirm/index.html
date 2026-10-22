@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multi Games - Email confirmation</title>
+</head>
+<body style="font-family: sans-serif; max-width: 480px; margin: 40px auto; padding: 0 16px; line-height: 1.5;">
+<h1>Multi Games</h1>
+
+<div id="ok">
+<p>आपके ईमेल की पुष्टि हो गई है। अब Multi Games ऐप खोलकर लॉगिन करें।</p>
+<p lang="en">Your email is confirmed. Please open the Multi Games app and login.</p>
+</div>
+
+<div id="bad" style="display: none;">
+<p>यह लिंक अमान्य है या इसकी समय-सीमा खत्म हो गई है। ऐप में दोबारा लॉगिन करके देखें, या नया लिंक मँगवाएँ।</p>
+<p lang="en">This link is invalid or has expired. Try logging in again in the app, or request a new link.</p>
+</div>
+
+<script>
+if (location.hash.indexOf("error") !== -1) {
+  document.getElementById("ok").style.display = "none";
+  document.getElementById("bad").style.display = "block";
+}
+</script>
+</body>
+</html>
