@@ -65,7 +65,7 @@
   <h1>Privacy Policy — Multi Games</h1>
 
   <div class="meta">
-    <p><strong>Last updated:</strong> 26 October 2026</p>
+    <p><strong>Last updated:</strong> 28 October 2026</p>
     <p><strong>App name:</strong> Multi Games</p>
     <p><strong>Package name:</strong> com.ivl.multigames</p>
     <p><strong>Games inside the app:</strong> Count 99, Cricket Pro, Risk and Win, Music Quiz</p>
@@ -84,9 +84,9 @@
       <tbody>
         <tr><td><strong>Email address</strong> and a unique account ID, when you sign in with e-mail and password or with Google. Your password is handled by the sign-in service and is never visible to us in readable form.</td><td>To create and secure your account, to let you sign in, to send account e-mails (confirmation and password reset).</td></tr>
         <tr><td><strong>Player name.</strong> It is taken automatically from the part of your e-mail address before the “@” (for example, for cloud@gmail.com the name is “cloud”).</td><td>To show who is playing. <strong>This name is visible to the other players in your room.</strong> Please keep this in mind when you choose the e-mail address you sign in with.</td></tr>
-        <tr><td><strong>Mobile number (optional).</strong> The app asks for it once; you can tap “Skip”. It is <strong>not verified</strong> with an OTP.</td><td>Saved only in your private profile. It is not shown to other players, and we do not sell or share it.</td></tr>
+        <tr><td><strong>Mobile number (optional).</strong> The app asks for it once; you can tap “Skip”. It is <strong>not verified</strong> with an OTP.</td><td>Saved only in your private profile. It is not shown to other players, and we do not sell or share it. Only the developer can see it.</td></tr>
         <tr><td><strong>Online game data:</strong> rooms you create or join, room codes, seat numbers, room settings, game moves, scores and results.</td><td>To run online games between players.</td></tr>
-        <tr><td><strong>Chat messages</strong>, only in rooms where the room creator has turned chat on. We store the message text, the sender and the time.</td><td>To deliver chat to the players in the room, and to keep a record so that abuse reports can be reviewed.</td></tr>
+        <tr><td><strong>Chat messages</strong>, only in rooms where the room creator has turned chat on. We store the message text, the sender and the time.</td><td>To deliver chat to the players in the room, and to keep a record so that abuse reports can be reviewed. The developer can read chat messages and account details, through a private admin tool that only the developer can log in to, to review abuse and keep players safe.</td></tr>
         <tr><td><strong>Reports and blocks:</strong> if you report or block a player, we store who reported whom and the reason you give.</td><td>To keep players safe and to review abuse. A copy of a report case (with the e-mail addresses of the players involved) is kept for 30 days, even if an account is deleted meanwhile.</td></tr>
       </tbody>
     </table>
@@ -113,7 +113,7 @@
   <p>The only Android permission the app uses is <strong>Internet access</strong>, needed for sign-in and online play. The app does not ask for any other permission.</p>
 
   <h2>5. Sign-in with Google</h2>
-  <p>If you choose “Continue with Google”, sign-in opens in your phone's web browser and Google handles the sign-in. We receive only the basic account details needed to create your account (such as your e-mail address). Google's own privacy policy applies to what Google does with your data.</p>
+  <p>If you choose “Continue with Google”, sign-in opens in your phone's web browser and Google handles the sign-in. We receive only the basic account details needed to create your account (such as your e-mail address; Google may also send your name and profile picture address, which the app does not show to other players). Google's own privacy policy applies to what Google does with your data.</p>
 
   <h2>6. Text-to-speech (voice announcements)</h2>
   <p>The games read out game events (for example “Computer chose 7” or “Six runs”) using the <strong>text-to-speech engine already installed on your device</strong> (such as Google Text-to-Speech or Samsung TTS). The app does not send this text anywhere. How the speech engine works is governed by that engine provider's own privacy policy.</p>
@@ -124,15 +124,16 @@
     <li><strong>Supabase</strong> — database and sign-in service that stores accounts, rooms, game data and chat (our project is hosted in the Singapore region).</li>
     <li><strong>Google</strong> — only if you choose to sign in with Google.</li>
     <li><strong>Brevo</strong> — sends account e-mails, such as e-mail confirmation and password reset.</li>
-    <li><strong>GitHub</strong> — hosts this policy page and the password-reset page, and holds a private, access-restricted backup copy of our database that is updated automatically every day.</li>
+    <li><strong>GitHub</strong> — hosts this policy page and the password-reset page, and holds a private, access-restricted backup copy of our database that is refreshed regularly. The developer may also save an export copy on his own private device. Backup copies are used only to restore the service or to deal with abuse and security problems, and they are deleted automatically after 30 days.</li>
   </ul>
-  <p>Data is sent over secure (HTTPS) connections. We may also disclose information if the law requires it, or to deal with serious abuse.</p>
+  <p>Data is sent over secure (HTTPS) connections. Our service providers may also process technical data, such as your IP address, in their server logs. We may also disclose information if the law requires it, or to deal with serious abuse.</p>
 
   <h2>8. How long we keep data</h2>
   <ul>
     <li>Account information is kept while your account exists.</li>
-    <li>Chat messages and reports are kept only as long as needed to run the room and to review abuse reports.</li>
-    <li>When you delete your account (see section 9), your account data is deleted at once. A limited safety copy is kept for 7 days, abuse report cases are kept for 30 days, and copies in our daily backup are removed when the backup is next refreshed.</li>
+    <li>Chat messages are deleted automatically after 14 days. Abuse reports are kept only as long as needed to review them (see the 30-day report cases in section 9).</li>
+    <li>If we ban an account for abuse, we keep a one-way scrambled (hashed) form of its e-mail address, which cannot be turned back into the address, so that the ban cannot be avoided by signing up again. It is kept until we lift the ban.</li>
+    <li>When you delete your account (see section 9), your account data is deleted at once. A limited safety copy is kept for 7 days, abuse report cases are kept for 30 days, and copies of deleted data may remain in our backups for up to 30 days, after which they are deleted automatically.</li>
   </ul>
 
   <h2 id="delete-account">9. Account deletion — available</h2>
@@ -155,7 +156,7 @@
     <li><strong>Deleted at once:</strong> your account (e-mail address and sign-in), your profile including the optional mobile number, the rooms you created, your game data and the chat messages you sent.</li>
     <li><strong>Kept for 7 days as a safety copy:</strong> your account ID, player name, e-mail address, the dates of sign-up and deletion, and copies of abuse reports, blocks and chat messages linked to your account. We use it only to review abuse and stop people who sign up just to misuse the service, and then it is deleted automatically.</li>
     <li><strong>Kept for 30 days — abuse report cases:</strong> if a player is reported, we keep a copy of that report (the reason, the e-mail addresses of the players involved, the room details and the last chat messages of that room) for 30 days, even if one of the accounts is deleted in the meantime. We use it only to review the report, and then it is deleted automatically.</li>
-    <li><strong>Copies in our daily backup,</strong> which are removed when the backup is next refreshed.</li>
+    <li><strong>Copies in our daily backup,</strong> which are deleted automatically after 30 days.</li>
   </ul>
   <p>You can also log out at any time from <strong>Settings &gt; Logout</strong>, and clear data stored on your phone as described in section 3.</p>
 
@@ -187,7 +188,7 @@
   <h1>गोपनीयता नीति (Privacy Policy) — Multi Games</h1>
 
   <div class="meta">
-    <p><strong>आख़िरी अपडेट:</strong> 26 अक्टूबर 2026</p>
+    <p><strong>आख़िरी अपडेट:</strong> 28 अक्टूबर 2026</p>
     <p><strong>ऐप का नाम:</strong> Multi Games</p>
     <p><strong>पैकेज नाम:</strong> com.ivl.multigames</p>
     <p><strong>ऐप के अंदर के गेम:</strong> Count 99, Cricket Pro, Risk and Win, Music Quiz</p>
@@ -206,9 +207,9 @@
       <tbody>
         <tr><td><strong>ईमेल पता</strong> और एक अलग अकाउंट आईडी, जब आप ईमेल-पासवर्ड से या Google से लॉगिन करते हैं। आपका पासवर्ड लॉगिन सेवा सँभालती है; वह हमें पढ़ने लायक रूप में कभी नहीं दिखता।</td><td>आपका खाता बनाने और सुरक्षित रखने, लॉगिन कराने, और खाते के ईमेल (पुष्टि और पासवर्ड रीसेट) भेजने के लिए।</td></tr>
         <tr><td><strong>खिलाड़ी का नाम।</strong> यह अपने-आप आपके ईमेल में “@” से पहले वाले हिस्से से बनता है (जैसे cloud@gmail.com के लिए नाम “cloud”)।</td><td>यह दिखाने के लिए कि कौन खेल रहा है। <strong>यह नाम आपके रूम के दूसरे खिलाड़ियों को दिखता है।</strong> इसलिए लॉगिन के लिए ईमेल चुनते समय यह बात ध्यान रखें।</td></tr>
-        <tr><td><strong>मोबाइल नंबर (वैकल्पिक)।</strong> ऐप इसे एक बार माँगता है; आप “Skip / छोड़ें” दबा सकते हैं। OTP से इसकी <strong>पुष्टि नहीं</strong> की जाती।</td><td>यह सिर्फ़ आपकी निजी प्रोफ़ाइल में सेव होता है। यह दूसरे खिलाड़ियों को नहीं दिखता, और हम इसे न बेचते हैं, न साझा करते हैं।</td></tr>
+        <tr><td><strong>मोबाइल नंबर (वैकल्पिक)।</strong> ऐप इसे एक बार माँगता है; आप “Skip / छोड़ें” दबा सकते हैं। OTP से इसकी <strong>पुष्टि नहीं</strong> की जाती।</td><td>यह सिर्फ़ आपकी निजी प्रोफ़ाइल में सेव होता है। यह दूसरे खिलाड़ियों को नहीं दिखता, और हम इसे न बेचते हैं, न साझा करते हैं। इसे सिर्फ़ डेवलपर देख सकता है।</td></tr>
         <tr><td><strong>ऑनलाइन खेल की जानकारी:</strong> आपके बनाए या जुड़े हुए रूम, रूम कोड, सीट नंबर, रूम की सेटिंग, खेल की चालें, स्कोर और नतीजे।</td><td>खिलाड़ियों के बीच ऑनलाइन खेल चलाने के लिए।</td></tr>
-        <tr><td><strong>चैट संदेश</strong>, सिर्फ़ उन रूम में जहाँ रूम बनाने वाले ने चैट चालू की हो। हम संदेश का टेक्स्ट, भेजने वाला और समय सेव करते हैं।</td><td>रूम के खिलाड़ियों तक चैट पहुँचाने के लिए, और रिकॉर्ड रखने के लिए ताकि दुर्व्यवहार की रिपोर्ट जाँची जा सके।</td></tr>
+        <tr><td><strong>चैट संदेश</strong>, सिर्फ़ उन रूम में जहाँ रूम बनाने वाले ने चैट चालू की हो। हम संदेश का टेक्स्ट, भेजने वाला और समय सेव करते हैं।</td><td>रूम के खिलाड़ियों तक चैट पहुँचाने के लिए, और रिकॉर्ड रखने के लिए ताकि दुर्व्यवहार की रिपोर्ट जाँची जा सके। डेवलपर चैट संदेश और खाते की जानकारी एक निजी एडमिन टूल से देख सकता है, जिसमें सिर्फ़ डेवलपर लॉगिन कर सकता है, ताकि दुर्व्यवहार की जाँच और खिलाड़ियों की सुरक्षा हो सके।</td></tr>
         <tr><td><strong>रिपोर्ट और ब्लॉक:</strong> अगर आप किसी खिलाड़ी की रिपोर्ट करते हैं या उसे ब्लॉक करते हैं, तो हम सेव करते हैं कि किसने किसकी रिपोर्ट की और आपने क्या कारण बताया।</td><td>खिलाड़ियों को सुरक्षित रखने और दुर्व्यवहार की जाँच के लिए। रिपोर्ट के मामले की कॉपी (शामिल खिलाड़ियों के ईमेल पते समेत) 30 दिन तक रखी जाती है, भले ही इस बीच कोई खाता डिलीट हो जाए।</td></tr>
       </tbody>
     </table>
@@ -235,7 +236,7 @@
   <p>ऐप सिर्फ़ एक Android अनुमति इस्तेमाल करता है: <strong>इंटरनेट</strong>, जो लॉगिन और ऑनलाइन खेल के लिए ज़रूरी है। ऐप कोई और अनुमति नहीं माँगता।</p>
 
   <h2>5. Google से लॉगिन</h2>
-  <p>अगर आप “Continue with Google” चुनते हैं, तो लॉगिन आपके फ़ोन के ब्राउज़र में खुलता है और लॉगिन Google सँभालता है। हमें सिर्फ़ खाता बनाने के लिए ज़रूरी बुनियादी जानकारी (जैसे आपका ईमेल पता) मिलती है। Google आपके डेटा का क्या करता है, उस पर Google की अपनी प्राइवेसी पॉलिसी लागू होती है।</p>
+  <p>अगर आप “Continue with Google” चुनते हैं, तो लॉगिन आपके फ़ोन के ब्राउज़र में खुलता है और लॉगिन Google सँभालता है। हमें सिर्फ़ खाता बनाने के लिए ज़रूरी बुनियादी जानकारी (जैसे आपका ईमेल पता; Google आपका नाम और प्रोफ़ाइल फ़ोटो का पता भी भेज सकता है, जिसे ऐप दूसरे खिलाड़ियों को नहीं दिखाता) मिलती है। Google आपके डेटा का क्या करता है, उस पर Google की अपनी प्राइवेसी पॉलिसी लागू होती है।</p>
 
   <h2>6. टेक्स्ट-टू-स्पीच (आवाज़ में घोषणा)</h2>
   <p>गेम अपनी घटनाएँ (जैसे “Computer chose 7” या “Six runs”) आपके फ़ोन में <strong>पहले से लगे टेक्स्ट-टू-स्पीच इंजन</strong> (जैसे Google Text-to-Speech या Samsung TTS) से बोलते हैं। ऐप यह टेक्स्ट कहीं नहीं भेजता। उस स्पीच इंजन का काम उसी इंजन की कंपनी की अपनी प्राइवेसी पॉलिसी के हिसाब से चलता है।</p>
@@ -246,15 +247,16 @@
     <li><strong>Supabase</strong> — डेटाबेस और लॉगिन सेवा, जहाँ खाते, रूम, खेल की जानकारी और चैट सेव होती है (हमारा प्रोजेक्ट सिंगापुर क्षेत्र में है)।</li>
     <li><strong>Google</strong> — सिर्फ़ तब, जब आप Google से लॉगिन चुनें।</li>
     <li><strong>Brevo</strong> — खाते के ईमेल भेजता है, जैसे ईमेल की पुष्टि और पासवर्ड रीसेट।</li>
-    <li><strong>GitHub</strong> — यह नीति वाला पेज और पासवर्ड रीसेट का पेज होस्ट करता है, और हमारे डेटाबेस की एक निजी, सीमित पहुँच वाली बैकअप कॉपी रखता है जो हर दिन अपने-आप अपडेट होती है।</li>
+    <li><strong>GitHub</strong> — यह नीति वाला पेज और पासवर्ड रीसेट का पेज होस्ट करता है, और हमारे डेटाबेस की एक निजी, सीमित पहुँच वाली बैकअप कॉपी रखता है जो नियमित रूप से नई की जाती है। डेवलपर अपने निजी फ़ोन में डेटा की एक एक्सपोर्ट कॉपी भी सेव कर सकता है। बैकअप कॉपी सिर्फ़ सेवा को वापस चालू करने या दुर्व्यवहार और सुरक्षा की समस्याओं से निपटने के लिए इस्तेमाल होती हैं, और 30 दिन बाद अपने-आप मिटा दी जाती हैं।</li>
   </ul>
-  <p>डेटा सुरक्षित (HTTPS) कनेक्शन से भेजा जाता है। कानून की ज़रूरत होने पर, या गंभीर दुर्व्यवहार से निपटने के लिए, हम जानकारी बता भी सकते हैं।</p>
+  <p>डेटा सुरक्षित (HTTPS) कनेक्शन से भेजा जाता है। हमारी सेवाएँ अपने सर्वर लॉग में तकनीकी जानकारी, जैसे आपका IP पता, भी सँभाल सकती हैं। कानून की ज़रूरत होने पर, या गंभीर दुर्व्यवहार से निपटने के लिए, हम जानकारी बता भी सकते हैं।</p>
 
   <h2>8. डेटा कितने समय तक रखा जाता है</h2>
   <ul>
     <li>खाते की जानकारी तब तक रहती है जब तक आपका खाता है।</li>
-    <li>चैट संदेश और रिपोर्ट सिर्फ़ उतने समय रखे जाते हैं जितना रूम चलाने और दुर्व्यवहार की रिपोर्ट जाँचने के लिए ज़रूरी हो।</li>
-    <li>जब आप खाता मिटाते हैं (भाग 9 देखें), आपके खाते का डेटा तुरंत मिट जाता है। सीमित सुरक्षा कॉपी 7 दिन तक, दुर्व्यवहार की रिपोर्ट के मामले 30 दिन तक रखे जाते हैं, और रोज़ के बैकअप की कॉपी अगली बार बैकअप नया होने पर हट जाती है।</li>
+    <li>चैट संदेश 14 दिन बाद अपने-आप मिट जाते हैं। दुर्व्यवहार की रिपोर्ट सिर्फ़ उतने समय रखी जाती हैं जितना उन्हें जाँचने के लिए ज़रूरी हो (भाग 9 के 30 दिन वाले रिपोर्ट मामले देखें)।</li>
+    <li>अगर हम दुर्व्यवहार के कारण किसी खाते पर रोक लगाते हैं, तो हम उसके ईमेल पते का एक तरफ़ा बदला हुआ (हैश) रूप रखते हैं, जिसे वापस ईमेल पते में नहीं बदला जा सकता, ताकि दोबारा साइन-अप करके रोक से बचा न जा सके। यह रोक हटने तक रखा जाता है।</li>
+    <li>जब आप खाता मिटाते हैं (भाग 9 देखें), आपके खाते का डेटा तुरंत मिट जाता है। सीमित सुरक्षा कॉपी 7 दिन तक, दुर्व्यवहार की रिपोर्ट के मामले 30 दिन तक रखे जाते हैं, और मिटाए गए डेटा की कॉपी हमारे बैकअप में अधिकतम 30 दिन तक रह सकती है, फिर वह अपने-आप मिट जाती है।</li>
   </ul>
 
   <h2 id="delete-account-hi">9. अकाउंट डिलीट — उपलब्ध है</h2>
@@ -277,7 +279,7 @@
     <li><strong>तुरंत मिट जाता है:</strong> आपका खाता (ईमेल और लॉगिन), आपकी प्रोफ़ाइल (वैकल्पिक मोबाइल नंबर समेत), आपके बनाए रूम, आपके खेल का डेटा और आपके भेजे चैट संदेश।</li>
     <li><strong>7 दिन तक सुरक्षा कॉपी रहती है:</strong> आपकी अकाउंट आईडी, खिलाड़ी का नाम, ईमेल पता, खाता बनने और डिलीट होने की तारीख़ें, और आपके खाते से जुड़ी दुर्व्यवहार की रिपोर्ट, ब्लॉक और चैट संदेशों की कॉपी। इसे हम सिर्फ़ दुर्व्यवहार की जाँच और सेवा का गलत इस्तेमाल करने के लिए खाता बनाने वालों को रोकने के लिए इस्तेमाल करते हैं, फिर यह अपने-आप मिट जाती है।</li>
     <li><strong>30 दिन तक रिपोर्ट के मामले रहते हैं:</strong> अगर किसी खिलाड़ी की रिपोर्ट होती है, तो हम उस रिपोर्ट की कॉपी (कारण, शामिल खिलाड़ियों के ईमेल पते, रूम की जानकारी और उस रूम के आख़िरी चैट संदेश) 30 दिन तक रखते हैं, भले ही इस बीच कोई खाता डिलीट हो जाए। इसे हम सिर्फ़ रिपोर्ट की जाँच के लिए इस्तेमाल करते हैं, फिर यह अपने-आप मिट जाती है।</li>
-    <li><strong>रोज़ के बैकअप की कॉपी,</strong> जो अगली बार बैकअप नया होने पर हट जाती है।</li>
+    <li><strong>रोज़ के बैकअप की कॉपी,</strong> जो 30 दिन बाद अपने-आप मिट जाती हैं।</li>
   </ul>
   <p>आप <strong>सेटिंग &gt; लॉगआउट</strong> से कभी भी लॉगआउट भी कर सकते हैं, और भाग 3 के अनुसार अपने फ़ोन का डेटा साफ़ कर सकते हैं।</p>
 
