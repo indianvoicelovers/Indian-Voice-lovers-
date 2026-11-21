@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multi Games</title>
+<style>
+  body{font-family:system-ui,Arial,sans-serif;margin:0;padding:24px 16px;background:#f5f7fb;color:#111}
+  main{max-width:520px;margin:0 auto}
+  h1{font-size:26px;margin:0 0 8px}
+  p{font-size:18px;line-height:1.5}
+  .code{font-size:28px;font-weight:bold;letter-spacing:4px;background:#fff;border-radius:10px;padding:12px;text-align:center;margin:12px 0}
+  a.btn{display:block;text-align:center;font-size:20px;font-weight:bold;background:#1d4ed8;color:#fff;text-decoration:none;padding:16px;border-radius:12px;margin:12px 0}
+  a.btn.alt{background:#0f766e}
+  @media (prefers-color-scheme:dark){body{background:#111827;color:#f3f4f6}.code{background:#1f2937}}
+</style>
+</head>
+<body>
+<main>
+  <h1>🎮 Multi Games</h1>
+  <p id="msg">ऐप खुल रहा है… / Opening the app…</p>
+  <div class="code" id="code" hidden></div>
+  <a class="btn" id="open" href="#">ऐप खोलें / Open the app</a>
+  <a class="btn alt" id="store" href="#">Play Store से लगाएँ / Get it on Play Store</a>
+  <p id="note"></p>
+</main>
+<script>
+(function () {
+  var PKG = "com.ivl.multigames";
+  var q = new URLSearchParams(location.search);
+  var room = (q.get("room") || "").replace(/[^A-Za-z0-9]/g, "").toUpperCase();
+  var inv = (q.get("invite") || "").replace(/[^A-Za-z0-9]/g, "").toUpperCase();
+  var store = "https://play.google.com/store/apps/details?id=" + PKG;
+  if (inv) store += "&referrer=" + encodeURIComponent("invite=" + inv);
+  var param = room ? "room=" + room : (inv ? "invite=" + inv : "");
+  var code = room || inv;
+  var codeEl = document.getElementById("code");
+  if (code) {
+    codeEl.hidden = false; codeEl.textContent = code;
+    document.getElementById("msg").textContent = room
+      ? "रूम कोड / Room code:" : "इनवाइट कोड / Invite code:";
+    document.getElementById("note").textContent = room
+      ? "ऐप न हो तो पहले इसे लगाएँ, फिर यही कोड \"कोड से जुड़ें\" में डालें।"
+      : "ऐप लगाने के बाद यही कोड प्रोफाइल में \"दोस्तों को बुलाएँ\" में डालें।";
+  } else {
+    document.getElementById("msg").textContent = "Multi Games";
+  }
+  document.getElementById("store").href = store;
+  var android = /Android/i.test(navigator.userAgent);
+  var intentUrl = "intent://join" + (param ? "?" + param : "") +
+    "#Intent;scheme=multigames;package=" + PKG +
+    ";S.browser_fallback_url=" + encodeURIComponent(store) + ";end";
+  document.getElementById("open").href = android ? intentUrl : store;
+  if (android && param) { setTimeout(function () { location.href = intentUrl; }, 400); }
+})();
+</script>
+</body>
+</html>
